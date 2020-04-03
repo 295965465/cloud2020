@@ -22,7 +22,7 @@ public class PaymentController {
     @PostMapping(value = "payment/create")
     public CommontResult Create(@RequestBody Payment payment){
       int result= paymentService.create(payment);
-      log.info("结果是:{}"+result);
+      log.info("结果是啊:{}"+result);
       if (result>0){
           return new CommontResult(200,"数据库插入成功",result);
       }else{
