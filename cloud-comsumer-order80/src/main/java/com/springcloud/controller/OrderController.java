@@ -21,7 +21,7 @@ import javax.annotation.Resource;
 public class OrderController {
     @Resource
     private RestTemplate RestTemplate;
-    private static final String urls = "http://localhost:8001";
+    private static final String urls = "http://CLOUD-PAYMENT-SERVICE";
 
     @PostMapping("/cousumer/payment/create")
     public CommontResult<Payment> create(Payment payment) {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="db2019">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.17">
     <root id="1">
       <ServerVersion>8.0.11</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -9,7 +9,6 @@
     </root>
     <schema id="2" parent="1" name="db2019">
       <Current>1</Current>
-      <Visible>1</Visible>
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
     <schema id="3" parent="1" name="information_schema">
@@ -1110,23 +1109,5 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="279" parent="2" name="payment"/>
-    <column id="280" parent="279" name="ID">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="281" parent="279" name="serial">
-      <Position>2</Position>
-      <DataType>varchar(200)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="282" parent="279" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>ID</ColNames>
-      <Primary>1</Primary>
-    </key>
   </database-model>
 </dataSource>
