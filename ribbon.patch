@@ -1,0 +1,229 @@
+Index: cloud-consumerzk-order80/cloud-consumerzk-order80.iml
+===================================================================
+--- cloud-consumerzk-order80/cloud-consumerzk-order80.iml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ cloud-consumerzk-order80/cloud-consumerzk-order80.iml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: cloud-provider-payment8002/cloud-provider-payment8002.iml
+===================================================================
+--- cloud-provider-payment8002/cloud-provider-payment8002.iml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ cloud-provider-payment8002/cloud-provider-payment8002.iml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: cloud-provider-payment8004/cloud-provider-payment8004.iml
+===================================================================
+--- cloud-provider-payment8004/cloud-provider-payment8004.iml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ cloud-provider-payment8004/cloud-provider-payment8004.iml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: cloud-provider-payment8002/target/classes/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cloud-provider-payment8002/target/classes/application.yml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ cloud-provider-payment8002/target/classes/application.yml	(date 1586223216156)
+@@ -7,7 +7,7 @@
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+-   url: jdbc:mysql://47.114.150.179:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
++   url: jdbc:mysql://127.0.0.1:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 353548
+ #mybatis配置
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ .idea/misc.xml	(date 1586231130703)
+@@ -1,6 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="FrameworkDetectionExcludesConfiguration">
++    <type id="Spring" />
++  </component>
+   <component name="JavaScriptSettings">
+     <option name="languageLevel" value="ES6" />
+   </component>
+@@ -8,6 +11,8 @@
+     <option name="originalFiles">
+       <list>
+         <option value="$PROJECT_DIR$/pom.xml" />
++        <option value="$PROJECT_DIR$/cloud-provider-payment8004/pom.xml" />
++        <option value="$PROJECT_DIR$/cloud-consumerzk-order80/pom.xml" />
+       </list>
+     </option>
+   </component>
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/encodings.xml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ .idea/encodings.xml	(date 1586223381848)
+@@ -1,12 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
++  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-api-commons" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-api-commons/src/main/java" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-comsumer-order80" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-comsumer-order80/src/main/java" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-comsumer-order80/src/main/resources" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/cloud-consumerzk-order80" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-eureka-server7001" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-eureka-server7001/src/main/java" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources" charset="UTF-8" />
+@@ -16,8 +17,10 @@
+     <file url="file://$PROJECT_DIR$/cloud-provider-payment8001" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-provider-payment8001/src/main/java" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/cloud-provider-payment8002" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-provider-payment8002/src/main/java" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/cloud-provider-payment8004" charset="UTF-8" />
+     <file url="PROJECT" charset="UTF-8" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: cloud-comsumer-order80/src/main/java/com/springcloud/controller/OrderController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cloud-comsumer-order80/src/main/java/com/springcloud/controller/OrderController.java	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ cloud-comsumer-order80/src/main/java/com/springcloud/controller/OrderController.java	(date 1586229750751)
+@@ -3,6 +3,7 @@
+ import com.springcloud.entities.CommontResult;
+ import com.springcloud.entities.Payment;
+ import lombok.extern.slf4j.Slf4j;
++import org.springframework.http.ResponseEntity;
+ import org.springframework.web.bind.annotation.GetMapping;
+ import org.springframework.web.bind.annotation.PathVariable;
+ import org.springframework.web.bind.annotation.PostMapping;
+@@ -31,4 +32,19 @@
+     public CommontResult<Payment> getPayment(@PathVariable("id") Long id) {
+         return RestTemplate.getForObject(urls + "/payment/get/"+id, CommontResult.class);
+     }
++
++
++    @GetMapping("/cousumer/payment/getForEntity/{id}")
++    public CommontResult<Payment> getForEntity(@PathVariable("id") Long id) {
++        ResponseEntity<CommontResult> forEntity = RestTemplate.getForEntity(urls + "/payment/get/" + id, CommontResult.class);
++        log.info(forEntity.getStatusCodeValue()+"a");
++        if (forEntity.getBody().getCode().equals(200)&&forEntity.getStatusCode().is2xxSuccessful()){
++
++            return forEntity.getBody() ;
++        }else{
++            return new CommontResult<>(404,"查询失败",null);
++
++        }
++
++    }
+ }
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ .idea/compiler.xml	(date 1586231060069)
+@@ -7,12 +7,14 @@
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+-        <module name="cloud-eureka-server7002" />
+         <module name="cloud-api-commons" />
++        <module name="cloud-comsumer-order80" />
++        <module name="cloud-consumerzk-order80" />
+         <module name="cloud-eureka-server7001" />
+-        <module name="cloud-provider-payment8002" />
++        <module name="cloud-eureka-server7002" />
+         <module name="cloud-provider-payment8001" />
+-        <module name="cloud-comsumer-order80" />
++        <module name="cloud-provider-payment8002" />
++        <module name="cloud-provider-payment8004" />
+       </profile>
+     </annotationProcessing>
+   </component>
+Index: cloud-comsumer-order80/src/main/java/com/myrule/MySelfRule.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cloud-comsumer-order80/src/main/java/com/myrule/MySelfRule.java	(date 1586230241457)
++++ cloud-comsumer-order80/src/main/java/com/myrule/MySelfRule.java	(date 1586230241457)
+@@ -0,0 +1,19 @@
++package com.myrule;
++
++import com.netflix.loadbalancer.IRule;
++import com.netflix.loadbalancer.RandomRule;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++
++/**
++ * @Auther: DELL
++ * @Date: 2020/4/7 11:29
++ * @Description:
++ */
++@Configuration
++public class MySelfRule {
++    @Bean
++    public IRule myRule(){
++        return new RandomRule();
++    }
++}
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ .idea/vcs.xml	(date 1586223381810)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: cloud-comsumer-order80/src/main/java/com/springcloud/OrderMain80.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cloud-comsumer-order80/src/main/java/com/springcloud/OrderMain80.java	(revision 07ede2df70a4fcc1e774012fa977e014420d8948)
++++ cloud-comsumer-order80/src/main/java/com/springcloud/OrderMain80.java	(date 1586230389690)
+@@ -1,8 +1,10 @@
+ package com.springcloud;
+ 
++import com.myrule.MySelfRule;
+ import org.springframework.boot.SpringApplication;
+ import org.springframework.boot.autoconfigure.SpringBootApplication;
+ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
++import org.springframework.cloud.netflix.ribbon.RibbonClient;
+ 
+ /**
+  * @Auther: DELL
+@@ -11,6 +13,7 @@
+  */
+ @SpringBootApplication
+ @EnableEurekaClient
++@RibbonClient(name ="CLOUD-PAYMENT-SERVICE" ,configuration = MySelfRule.class)
+ public class OrderMain80 {
+     public static void main(String[] args) {
+         SpringApplication.run(OrderMain80.class,args);
