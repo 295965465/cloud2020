@@ -9,6 +9,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Auther: DELL
@@ -44,6 +45,17 @@ public class PaymentController {
     }
     @GetMapping(value = "/payment/lb")
     public String getPaymentLB(){
+        return serverPort;
+    }
+
+    @GetMapping(value = "/payment/FeignTimeout")
+    public String PaymentFeignTimeout(){
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return serverPort;
     }
 }
