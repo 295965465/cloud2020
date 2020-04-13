@@ -11,7 +11,11 @@
 
     <artifactId>cloud-consumer-feign-hystrix-order80</artifactId>
     <dependencies>
-
+        <!--   hystrix     -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
         <!--引入eureka客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
