@@ -21,7 +21,7 @@ spring:
           predicates:
             - Path=/payment/lb/**
             #- After=2020-04-14T11:40:38.085+08:00[Asia/Shanghai]
-            - Cookie=username, zsc
+            #- Cookie=username, zsc
 
 
 
