@@ -12,11 +12,21 @@ spring:
           search-paths:
             - springcloud-config
       label: master  #默认读取的分支
-
-
+  rabbitmq:
+    host: 47.114.150.179
+    port: 5672
+    username: root
+    password: 123456
+#eureka注册
 eureka:
   instance:
     hostname: cloud-config-service #实例名
   client:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+#Rabbitmq 相关配置，暴露bus刷新配置的端点
+management:
+  endpoints:  #暴露bus刷新配置端点
+    web:
+      exposure:
+        include: "bus-refresh" #curl -X POST "http://localhost:3344/actuator/bus-refresh/config-client:3355 定点通知  curl -X POST "http://localhost:3344/actuator/bus-refresh 全局通知

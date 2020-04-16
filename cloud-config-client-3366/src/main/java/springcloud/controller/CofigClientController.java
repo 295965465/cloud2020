@@ -1,4 +1,4 @@
-package com.springcloud.controller;
+package springcloud.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,9 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class CofigClientController {
     @Value("${config.info}")
     private String configInfo;
-
+    @Value("${server.port}")
+    private String serverPort;
     @GetMapping("/configInfo")
     public String getConfigInfo(){
-        return configInfo;
+        return "serverPort:"+serverPort+" config:"+ configInfo;
     }
 }
