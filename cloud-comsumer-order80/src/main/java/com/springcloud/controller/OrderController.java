@@ -46,7 +46,10 @@ public class OrderController {
         return RestTemplate.getForObject(urls + "/payment/get/"+id, CommontResult.class);
     }
 
-
+    @GetMapping("/cousumer/payment/zipkin")
+    public String paymentZipkin(){
+        return RestTemplate.getForObject("http://localhost:8001" + "/payment/zipkin/",String.class);
+    }
     @GetMapping("/cousumer/payment/getForEntity/{id}")
     public CommontResult<Payment> getForEntity(@PathVariable("id") Long id) {
         ResponseEntity<CommontResult> forEntity = RestTemplate.getForEntity(urls + "/payment/get/" + id, CommontResult.class);

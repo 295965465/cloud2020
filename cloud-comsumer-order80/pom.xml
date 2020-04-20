@@ -12,7 +12,11 @@
     <artifactId>cloud-comsumer-order80</artifactId>
 
 <dependencies>
-
+    <!--引入zipkin客户端-->
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-zipkin</artifactId>
+    </dependency>
     <!--引入eureka客户端-->
     <dependency>
         <groupId>org.springframework.cloud</groupId>
