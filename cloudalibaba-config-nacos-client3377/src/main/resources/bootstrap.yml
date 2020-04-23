@@ -2,7 +2,7 @@ server:
   port: 3377
 spring:
   application:
-    name: nacos-config-client
+      name: nacos-config-client
   cloud:
     nacos:
       discovery:
@@ -10,3 +10,5 @@ spring:
       config:
         server-addr: 47.114.150.179:8848
         file-extension: yaml
+        group: DEV_GROUP
+        namespace: 10937265-bd66-4898-8f30-4dad519c1998   #这里要放ID
